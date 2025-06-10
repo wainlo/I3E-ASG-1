@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class resetspawn : MonoBehaviour
 {
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float threshold;
 
-    // Update is called once per frame
-    void Update()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void FixedUpdate()
     {
-        
+        if(transform.position.y < threshold)
+        {
+            transform.position = new Vector3(0 , 3, 0);
+        }
     }
 }
