@@ -26,14 +26,14 @@ public class PlayerBehaviour : MonoBehaviour
                 currentChess.Highlight(); // Highlight the chess piece
 
             }
-        else
-        {
-            if (currentChess != null)
+            else
             {
-                currentChess.Unhighlight(); // Remove highlight if no chess piece is hit
-                currentChess = null; // Clear the reference to the highlighted chess piece
+                if (currentChess != null)
+                {
+                    currentChess.Unhighlight(); // Remove highlight if no chess piece is hit
+                    currentChess = null; // Clear the reference to the highlighted chess piece
+                }
             }
-        }
 
     }
 
@@ -45,5 +45,16 @@ public class PlayerBehaviour : MonoBehaviour
         GameObject newProjectile = Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
         Vector3 fireForce = spawnPoint.forward * fireStrength;
         newProjectile.GetComponent<Rigidbody>().AddForce(fireForce);
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "bullet" && gameObject.tag == "bear")
+        {
+            Debug.Log("bear hit by bullet!");
+            Destroy(collision.gameObject); // Destroy the projectile
+            Destroy(gameObject); // Destroy the bear
+
+        }
+
     }
 }
