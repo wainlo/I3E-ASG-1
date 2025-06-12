@@ -10,6 +10,8 @@ TagManager:
   - fire
   - bullet
   - bear
+  - door
+  - doorcollision
   layers:
   - Default
   - TransparentFX
