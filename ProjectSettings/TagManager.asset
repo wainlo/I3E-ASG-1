@@ -11,7 +11,7 @@ TagManager:
   - bullet
   - bear
   - door
-  - doorcollision
+  - DoorCollider
   layers:
   - Default
   - TransparentFX
