@@ -14,10 +14,7 @@ public class PlayerBehaviour : MonoBehaviour
     public Animator doorAnimator; // Reference to the door animator for opening/closing doors
     public bool isCollected = false; // Flag to check if the chess piece is collected
     chessbehaviour currentChess = null; // Reference to the currently highlighted chess piece
-    void Awake()
-    {
-        isCollected = false; // Initialize the isCollected flag
-    }
+    
     void Update()
     {
         RaycastHit hitInfo;
@@ -65,13 +62,6 @@ public class PlayerBehaviour : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "DoorCollider")
-        {
-            isCollected = true; // Set the flag to true when the player collects the chess piece
-            doorAnimator.SetBool("isCollected", isCollected); // Trigger the door animation
-        }
-    }
+   
 
 }

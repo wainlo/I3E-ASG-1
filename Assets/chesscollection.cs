@@ -8,7 +8,7 @@ public class ChessCollection : MonoBehaviour
     private int health = 100; // Initial health value
     public TextMeshProUGUI chessCountText;  // Reference to the TMP Text element
     public TextMeshProUGUI healthText; // Reference to the TMP Text element for health
-     public Transform spawnPoint;
+    public Transform spawnPoint;
 
     void Start()
     {
@@ -44,7 +44,7 @@ public class ChessCollection : MonoBehaviour
                 Respawn(); // Respawn if health reaches 0
             }
             healthText.text = "Health: " + health.ToString(); // Update health UI
-        }
+        } 
     }
 
     void UpdateChessCount()
