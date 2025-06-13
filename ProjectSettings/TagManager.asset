@@ -12,6 +12,7 @@ TagManager:
   - bear
   - door
   - DoorCollider
+  - laser
   layers:
   - Default
   - TransparentFX

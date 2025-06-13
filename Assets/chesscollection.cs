@@ -44,7 +44,11 @@ public class ChessCollection : MonoBehaviour
                 Respawn(); // Respawn if health reaches 0
             }
             healthText.text = "Health: " + health.ToString(); // Update health UI
-        } 
+        }
+        if (other.CompareTag("laser"))
+        {
+            Respawn(); // Respawn if colliding with a laser
+        }
     }
 
     void UpdateChessCount()
