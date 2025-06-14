@@ -2794,6 +2794,8 @@ MonoBehaviour:
   chessCountText: {fileID: 633245256}
   healthText: {fileID: 396243911}
   spawnPoint: {fileID: 672853380}
+  collectSound: {fileID: 0}
+  healthSound: {fileID: 0}
 --- !u!114 &340977065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6523,6 +6525,8 @@ MonoBehaviour:
   chessCountText: {fileID: 633245256}
   healthText: {fileID: 396243911}
   spawnPoint: {fileID: 0}
+  collectSound: {fileID: 0}
+  healthSound: {fileID: 0}
 --- !u!114 &607483852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19269,6 +19273,8 @@ MonoBehaviour:
   chessCountText: {fileID: 633245256}
   healthText: {fileID: 396243911}
   spawnPoint: {fileID: 672853380}
+  collectSound: {fileID: 8300000, guid: 5b098e0d52706d44298850a8734843a0, type: 3}
+  healthSound: {fileID: 8300000, guid: 6a16e04a20846bc42acc5248feb34ff3, type: 3}
 --- !u!114 &817074411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29433,13 +29439,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 88e3a5d2319e6e048982b39dcbd2beb2, type: 3}
   m_Resource: {fileID: 8300000, guid: 88e3a5d2319e6e048982b39dcbd2beb2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.054
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 104
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

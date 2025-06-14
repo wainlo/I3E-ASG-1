@@ -10,10 +10,21 @@ public class ChessCollection : MonoBehaviour
     public TextMeshProUGUI healthText; // Reference to the TMP Text element for health
     public Transform spawnPoint;
 
+    public AudioClip collectSound; // Add this
+    public AudioClip healthSound; // Add this for health collection sound
+    private AudioSource audioSource; // And this
+    private AudioSource audioSource2; // For the second AudioSource if needed
+
     void Start()
     {
         UpdateChessCount();
         UpdateHealthUI();
+        audioSource = GetComponent<AudioSource>(); // Initialize the AudioSource
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource2 = gameObject.AddComponent<AudioSource>(); // Add a second AudioSource if needed
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,6 +35,7 @@ public class ChessCollection : MonoBehaviour
             Destroy(other.gameObject);
             UpdateChessCount();
             Debug.Log("Chess Pieces Collected : " + chess.ToString());
+            audioSource.PlayOneShot(collectSound); // Play the collect sound
         }
         if (other.CompareTag("fire"))
         {
@@ -50,6 +62,7 @@ public class ChessCollection : MonoBehaviour
             health -= 15; // Decrease health by 5 when colliding with a bullet
             if (health < 0) health = 0; // Ensure health doesn't go below 0
             if (health == 0)
+
             {
                 Respawn(); // Respawn if health reaches 0
             }
@@ -59,6 +72,7 @@ public class ChessCollection : MonoBehaviour
         {
             health += 20; // Increase health by 20 when collecting a power-up
             if (health > 100) health = 100; // Ensure health doesn't exceed 100
+            audioSource.PlayOneShot(healthSound); // Play the collect sound
             healthText.text = "Health: " + health.ToString(); // Update health UI
             Destroy(other.gameObject); // Destroy the power-up after collection
         }

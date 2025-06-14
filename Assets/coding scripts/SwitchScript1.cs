@@ -13,12 +13,12 @@ public class SwitchScript2 : MonoBehaviour
         {
             door1.OpenDoor();
             door2.OpenDoor();
-            FlipSwitch();
+            pressbutton();
             hasBeenFlipped = true; // Prevent multiple flips
         }
     }
 
-    void FlipSwitch()
+    void pressbutton()
     {
         // Flip the switch 180 degrees on the Y axis
         transform.position = new Vector3(74.038f, 5.372f, -76.33f);

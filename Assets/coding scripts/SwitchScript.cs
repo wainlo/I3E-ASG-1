@@ -11,12 +11,12 @@ public class SwitchScript : MonoBehaviour
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E) && !hasBeenFlipped)
         {
             door.OpenDoor();
-            FlipSwitch();
+            pressbutton();
             hasBeenFlipped = true; // Prevent multiple flips
         }
     }
 
-    void FlipSwitch()
+    void pressbutton()
     {
         // Flip the switch 180 degrees on the Y axis
         transform.position = new Vector3(5.3f, 4.29f, -9.86f);
