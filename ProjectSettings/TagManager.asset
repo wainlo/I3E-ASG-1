@@ -11,8 +11,9 @@ TagManager:
   - bullet
   - bear
   - door
-  - DoorCollider
   - laser
+  - ENEMY
+  - powerup
   layers:
   - Default
   - TransparentFX

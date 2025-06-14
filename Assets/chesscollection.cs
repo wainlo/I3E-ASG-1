@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 public class ChessCollection : MonoBehaviour
 {
     private int chess = 0;
-    private int health = 100; // Initial health value
+    public int health = 100; // Initial health value
     public TextMeshProUGUI chessCountText;  // Reference to the TMP Text element
     public TextMeshProUGUI healthText; // Reference to the TMP Text element for health
     public Transform spawnPoint;
@@ -45,6 +45,24 @@ public class ChessCollection : MonoBehaviour
             }
             healthText.text = "Health: " + health.ToString(); // Update health UI
         }
+        if (other.CompareTag("bullet"))
+        {
+            health -= 5; // Decrease health by 5 when colliding with a bullet
+            if (health < 0) health = 0; // Ensure health doesn't go below 0
+            if (health == 0)
+            {
+                Respawn(); // Respawn if health reaches 0
+            }
+            healthText.text = "Health: " + health.ToString(); // Update health UI
+        }
+        if (other.CompareTag("powerup"))
+        {
+            health += 20; // Increase health by 20 when collecting a power-up
+            if (health > 100) health = 100; // Ensure health doesn't exceed 100
+            healthText.text = "Health: " + health.ToString(); // Update health UI
+            Destroy(other.gameObject); // Destroy the power-up after collection
+        }
+        
         if (other.CompareTag("laser"))
         {
             Respawn(); // Respawn if colliding with a laser

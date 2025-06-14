@@ -6,13 +6,14 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-
+    public Transform chesspoint1; // Reference to the chess point for spawning chess pieces
+    public GameObject chess; // Reference to the chess piece prefab
     [SerializeField] GameObject projectile; // Reference to the projectile object
     [SerializeField] Transform spawnPoint; // Reference to the spawn point for the projectile
     [SerializeField] float fireStrength = 60f; // Projectile fire strength
     [SerializeField] float interactionDistance = 5f;
-    public Animator doorAnimator; // Reference to the door animator for opening/closing doors
-    public bool isCollected = false; // Flag to check if the chess piece is collected
+    
+    
     chessbehaviour currentChess = null; // Reference to the currently highlighted chess piece
     
     void Update()
@@ -60,8 +61,15 @@ public class PlayerBehaviour : MonoBehaviour
             Destroy(gameObject); // Destroy the bear
 
         }
+        
+        if (collision.gameObject.tag == "bullet" && gameObject.tag == "box")
+        {
+           
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+    }
 
     }
    
 
-}
