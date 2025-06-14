@@ -47,7 +47,7 @@ public class ChessCollection : MonoBehaviour
         }
         if (other.CompareTag("bullet"))
         {
-            health -= 5; // Decrease health by 5 when colliding with a bullet
+            health -= 15; // Decrease health by 5 when colliding with a bullet
             if (health < 0) health = 0; // Ensure health doesn't go below 0
             if (health == 0)
             {
