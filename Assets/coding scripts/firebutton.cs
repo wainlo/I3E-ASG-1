@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SwitchScript : MonoBehaviour
+public class firebutton : MonoBehaviour
 {
     public DoorController door;
     private bool isPlayerNear = false;
@@ -19,7 +19,7 @@ public class SwitchScript : MonoBehaviour
     void pressbutton()
     {
         
-        transform.position = new Vector3(24.415f, 32.63f, -6.09f);
+        transform.position = new Vector3(-73.984f, 4.42f, -74.2f);
     }
 
     void OnTriggerEnter(Collider other)
