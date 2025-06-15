@@ -64,6 +64,10 @@ bear - https://assetstore.unity.com/packages/p/free-stylized-bear-rpg-forest-ani
 fire - https://assetstore.unity.com/packages/vfx/particles/vfx-magical-flames-293962  
 box - https://assetstore.unity.com/packages/3d/props/industrial/low-poly-wooden-crate-308305  
 archer tower - https://sketchfab.com/3d-models/archer-tower-07238c64d795488e9cdf932bb51e36e5  
+bgm - https://downloads.khinsider.com/game-soundtracks/album/plants-vs.-zombies/05.%2520Loonboon.mp3
+button SFX - https://pixabay.com/sound-effects/search/button/
+powerup - https://pixabay.com/sound-effects/search/power%20up/
+collection - https://pixabay.com/sound-effects/search/collect/
 
 • Include the answers on how to solve your game puzzles if any
 
