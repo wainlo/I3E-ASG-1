@@ -56,7 +56,7 @@ Additional Notes: recommend installing Unity and your project/game on an SSD for
 
 • Indicate the limitations or bugs in the application
 
-able to hug the wall and stay thee til you detach from it.  
+able to hug the wall and stay there till you detach from it.  
 player could simply jump over the fire and take minimal damage
 
 
@@ -78,7 +78,7 @@ collection - https://pixabay.com/sound-effects/search/collect/
 
 first room - parkour, jump to the top without falling to obtain a chess piece and to open the door of third room  
 
-second room - fire , find a button in the third room to lower a bridge to safely optain another chess piece.  
+second room - fire , find a button in the third room to lower a bridge to safely obtain another chess piece.  
 
 third room - bears , shoot the bears that deal damage to you when youre near by aiming your crosshair at them and shooting. this room will also have the button to lower the bridge for second room  
 
