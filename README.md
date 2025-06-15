@@ -1,7 +1,12 @@
 # I3E-ASG-1
 ASIGNMENT 1 FOR I3E
 Readme should include detailed instructions (key controls, game hack, answer
-key, etc) on how to use and run your application.
+key, etc) on how to use and run your application.  
+  
+Author  - Waine Low Xun Xian  
+Date  - 15 / 06 / 2025  
+Description  - Chess Craze
+
 
 W - Forward                              
 A - Left  
@@ -19,7 +24,7 @@ first room - parkour, jump to the top without falling to obtain a chess piece an
 
 second room - fire , find a button in the third room to lower a bridge to safely optain another chess piece.  
 
-third room - bears , shoot the bears that deal damage to you when youre near by aiming your crosshair at them and shooting. this room will also have the button to lower the bridge for second room  
+third room - bears , shoot the bears that deal damage to you when youre in contact by aiming your crosshair at them and shooting. this room will also have the button to lower the bridge for second room  
 
 fourth room - lasers, get to the end of the room without touching a laser. touching a laser will set you back to the start  
 
