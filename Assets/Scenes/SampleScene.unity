@@ -3014,7 +3014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e125d22aa51647b5a7e6ba75a92d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chesspoint1: {fileID: 0}
   chess: {fileID: 0}
   projectile: {fileID: 7656177468750315999, guid: 226ee96b49272994b8ad1da4b7d39207, type: 3}
   spawnPoint: {fileID: 1596502820}
@@ -4426,7 +4425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: sprintFOV
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: walkSpeed
@@ -7065,7 +7064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e125d22aa51647b5a7e6ba75a92d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chesspoint1: {fileID: 0}
   chess: {fileID: 0}
   projectile: {fileID: 7656177468750315999, guid: 226ee96b49272994b8ad1da4b7d39207, type: 3}
   spawnPoint: {fileID: 1596502820}
@@ -22703,7 +22701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e125d22aa51647b5a7e6ba75a92d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chesspoint1: {fileID: 0}
   chess: {fileID: 919132149155446097, guid: bf05a29ff05e5e444a6ae3e86fb92885, type: 3}
   projectile: {fileID: 7656177468750315999, guid: 226ee96b49272994b8ad1da4b7d39207, type: 3}
   spawnPoint: {fileID: 1846006937}
