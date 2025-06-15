@@ -15,7 +15,7 @@ E - Interact
 
 collect chess pieces.  
 
-first room - parkour, jump to the top without falling to obtain a chess piece and to open the door of third room   
+first room - parkour, jump to the top without falling to obtain a chess piece and to open the door of fourth room   
 
 second room - fire , find a button in the third room to lower a bridge to safely optain another chess piece.  
 
@@ -52,6 +52,8 @@ Additional Notes: recommend installing Unity and your project/game on an SSD for
 • Indicate the limitations or bugs in the application
 
 able to hug the wall and stay thee til you detach from it.
+player could simply jump over the fire and take minimal damage
+
 
 • Indicate references and credits to the models/textures/materials used
   
