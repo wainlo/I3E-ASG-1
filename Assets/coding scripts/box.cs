@@ -7,7 +7,7 @@ public class box : MonoBehaviour
     {
         if (other.CompareTag("bullet"))
         {
-            Destroy(gameObject); // Disappear the box
+            Destroy(gameObject); // Destroy the box
         }
     }
 }

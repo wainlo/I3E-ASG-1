@@ -6,7 +6,7 @@ public class BearHit : MonoBehaviour
     {
         if (other.CompareTag("bullet"))
         {
-            Destroy(gameObject); // Disappear the bear
+            Destroy(gameObject); // Destroy the bear
         }
     }
 }

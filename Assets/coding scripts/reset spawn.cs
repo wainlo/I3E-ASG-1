@@ -9,7 +9,7 @@ public class resetspawn : MonoBehaviour
     {
         if(transform.position.y < threshold)
         {
-            transform.position = new Vector3(0 , 3, -20);
+            transform.position = new Vector3(0 , 3, -20);// Reset the position of the object to the specified coordinates
         }
     }
 }

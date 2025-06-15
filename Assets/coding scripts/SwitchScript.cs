@@ -6,6 +6,8 @@ public class SwitchScript : MonoBehaviour
     private bool isPlayerNear = false;
     private bool hasBeenPressed = false;
 
+    public AudioSource audioSource;
+
     void Update()
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E) && !hasBeenPressed)
@@ -13,13 +15,14 @@ public class SwitchScript : MonoBehaviour
             door.OpenDoor();
             pressbutton();
             hasBeenPressed = true; // Prevent multiple presses
+            audioSource.Play();
         }
     }
 
     void pressbutton()
     {
         
-        transform.position = new Vector3(24.415f, 32.63f, -6.09f);
+        transform.position = new Vector3(24.415f, 32.63f, -6.09f);// Adjust the position as needed
     }
 
     void OnTriggerEnter(Collider other)

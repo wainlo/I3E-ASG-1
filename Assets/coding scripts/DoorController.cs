@@ -10,15 +10,15 @@ public class DoorController : MonoBehaviour
 
     void Start()
     {
-        closedPosition = transform.position;
-        openPosition = closedPosition + openPositionOffset;
+        closedPosition = transform.position;// Store the initial position of the door as the closed position
+        openPosition = closedPosition + openPositionOffset;// Calculate the open position based on the closed position and offset
     }
 
     void Update()
     {
         if (isOpen)
         {
-            transform.position = Vector3.Lerp(transform.position, openPosition, Time.deltaTime * openSpeed);
+            transform.position = Vector3.Lerp(transform.position, openPosition, Time.deltaTime * openSpeed);// Smoothly move the door to the open position
         }
     }
 

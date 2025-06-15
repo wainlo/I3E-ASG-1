@@ -85,18 +85,20 @@ public class ChessCollection : MonoBehaviour
 
     void UpdateChessCount()
     {
-        chessCountText.text = "Chess Pieces: " + chess.ToString();
+        chessCountText.text = "Chess Pieces: " + chess.ToString();// Update the UI text with the current chess count
     }
     void UpdateHealthUI()
     {
-        healthText.text = "Health: " + health.ToString();
+        healthText.text = "Health: " + health.ToString();// Update the UI text with the current health
     }
     void Respawn()
-{
-    transform.position = spawnPoint.position;
-    health = 100;
-    UpdateHealthUI();
-}
-
-
+    {
+        transform.position = spawnPoint.position;// Reset the player's position to the spawn point
+        health = 100;
+        UpdateHealthUI();
+    }
+    public int GetChessCount()
+    {
+        return chess;
+    }
 }
